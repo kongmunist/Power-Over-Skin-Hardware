@@ -16,7 +16,9 @@ You can assume all parts are generic unless mentioned below:
 - C9: Should be NP0, with a Vmax 10V or better
 
 # Transmitter
-In our experiments, we used a benchtop transmitter and a wearable one to generate 40 MHz square waves. These were passed through an impedance-matching network to couple into the body. The values we used were: first 20pF in series, then 820nH to ground. The 20pF should be NP0 with a voltage rating higher than the 40MHz you're sending into it. We used this inductor ((L-15FR82JV4E))[https://www.mouser.com/ProductDetail/Johanson-Technology/L-15FR82JV4E?qs=N%252Bgu1CRRfTPf9IhMOTDbHA%3D%3D] but anything with a self-resonant frequency >200 MHz should work. 
+In our experiments, we used a benchtop transmitter and a wearable one to generate 40 MHz square waves. These were passed through an impedance-matching network to couple into the body. The values we used were: first 20pF in series, then 820nH to ground. 
+
+The 20pF should be NP0 with a voltage rating higher than the 40MHz you're sending into it. We used this inductor [(L-15FR82JV4E)](https://www.mouser.com/ProductDetail/Johanson-Technology/L-15FR82JV4E?qs=N%252Bgu1CRRfTPf9IhMOTDbHA%3D%3D) but anything with a self-resonant frequency >200 MHz should work. 
 
 ![tximn.png](ims/tximn.png)
 
@@ -24,4 +26,4 @@ In our experiments, we used a benchtop transmitter and a wearable one to generat
 The RF component values are all tuned for 40 MHz and human skin impedance — if you'd like to use another frequency, you'll have to resimulate the circuit. 
 
 # Further questions?
-Feel free to email Andy with any questions
+Feel free to email Andy with any questions!
